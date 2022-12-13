@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern Library</title>
+</head>	
+
+<style>
+html{scroll-behavior: smooth;}
+body{font-family:'Open Sans', sans-serif;}
+section{margin-top: 3em;margin-bottom: 3em; max-width:60em;}
+img{max-width:500px;}
+h1{font-size:50px;}
+h2{font-size:30px;}
+
+ button{padding: 15px; font-weight: 700; border: 2px solid #F3F5F6; background-color:#F3F5F6;}
+ button:hover{background-color:#4d4d4d; color:#4d4d4d; border: 2px solid #F3F5F6; }
+ button a{text-decoration:none;}
+ button a:hover{color: #F3F5F6; padding: 30px;}
+.three_img_container{display: flex; justify-content: center;}
+.three_img_container>img{max-width:300px;margin-top: 3em;margin-bottom: 3em;}
+.body_content{display:flex; gap:5em;}
+.body_container{display:flex; justify-content:center; padding-left:10em; padding-right:10em;}
+.img_container{text-align: center;}
+.top-bottom-padding{padding-top:5em; padding-bottom:5em;}
+.spacer{margin-top: 50px; margin-bottom: 50px;}
+#pattern_navbar{background-color: #f7f7f9; padding:2em;}
+.EndCap{padding-top: 100px; padding-bottom: 100px; text-align: center; background-color:#4d4d4d; color:#F3F5F6;}
+.EndCapContainer{background-color:#1a1e23; width: 100%;}
+.email a{position: relative; z-index: 50; color:#4d4d4d; transition: ease .4s;}
+.email a:before{position: absolute; z-index: 40; content: ''; top: -30px; right: -30px; left: -30px; bottom: -30px;}
+.FinePrint{padding: 10px;}
+</style>
+
+<body>
+
+<div class="body_container">
+<div class="body_content">
+
+<nav id="pattern_navbar" class="">
+  <a class="navbar-brand"><b>Patterns</b></a>
+  <nav class="nav nav-pills flex-column">
+    <a class="nav-link" href="#item-1">Purpose</a>
+    <a class="nav-link" href="#item-2">Basic Page Layout</a>
+    <a class="nav-link" href="#item-3">Overview/Routing Pages</a>
+    <a class="nav-link" href="#item-4">Resource Pages</a>
+    <a class="nav-link" href="#item-5">Contact & Directory Pages</a>
+  </nav>
+</nav>
+
+
+
+<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+<section id="item-1">
+<h1>Pattern Library</h1>
+<p>Our pattern library consists of frequently used page types with appropriate component placement and usage in an effort to best solve the members problem. 
+It will go over the various different page types used, the level of navigation for each page, and the placement, order and usage of components. 
+A pattern is always paired with the problem it solves and the situation it appears in. A solution applied in a context it wasn’t designed for is not a pattern.
+A pattern must be consistently used throughout the site for the corresponding problem it is solving.</p>
+</section>
+
+<section>
+<h2>Purpose:</h2>
+<p>The purpose of a pattern is to:
+<ul>
+	<li>Design the best possible member experience</li>
+	<li>Simplify the building of the UI</li>
+	<li>Create consistency accross the site</li>
+</ul>
+</section>
+
+<section>
+<h2>Page Layouts:</h2>
+<p>Page layouts provide patterns of common ways to arrange components and content on the screen.</p>
+</section>
+
+
+
+<div class="spacer">
+<center><hr></center>
+</div>
+</section>
+
+
+<section id="item-2">
+<h2>Basic Page Layout:</h2>
+<p>The Basic page layout, known in Sitecore as the Single column page, is the entire user interface (UI) of a page. The Navigation menus and footer are global components that should always be active on the page. 
+The body section are where components are placed to build out the page. In a single column page, the sections will have a uniform vertical gap of [40px]; no margin and padding will be necessary for each section.
+</p>
+</section>
+
+
+<section>
+<div class="img_container top-bottom-padding">
+<img src="pat_lib_images/Basic_Page_Layout.jpg">
+</div>
+
+<div class="three_img_container top-bottom-padding">
+<img src="pat_lib_images/Page Navigation w- Footer.jpg"><img src="pat_lib_images/Page Header.jpg"><img src="pat_lib_images/Page_body_content.jpg">
+</div>
+
+</section>
+
+<div class="spacer">
+<center><hr></center>
+</div>
+
+
+<section id="item-3">
+<h2>Overview/Routing Pages:</h2>
+<p>Routing Pages serve as an overview of different products and services within a Business. They reside in a secondary or tertiary level within a product or service. And give a brief description, or list of details to inform the user to aid them in making their decision. In addition, they lead the user to more specific and detailed pages residing in a tertiary or quaternary level of page navigation.</p>
+
+&nbsp;
+
+<p>Below is an example of how a Routing page might be laid out and how the components are used</p>
+</section>
+
+
+<div class="img_container top-bottom-padding">
+<img src="pat_lib_images/Overview-Routing_Page_Example.jpg">
+</div>
+</section>
+
+<div class="spacer">
+<center><hr></center>
+</div>
+
+
+<section id="item-4">
+<h2>Resource Pages:</h2>
+<p>Resource pages reside at a secondary level within a Business or Service. It consists of articles, widgets, checklists, links, and documents relevant to the Business or Service.</p>
+
+<p>Users can utilize Resource pages to find additional information about a Product or Service either within SSFCU.org or through third-party and vendor sites. In addition, users can utilize the tools and widgets within the Resource page to aid in making decisions.</p>
+
+&nbsp;
+
+<p>Below is an example of how a Resource page might be laid out and how the components could be used:</p>
+</section>
+
+<div class="img_container top-bottom-padding">
+<img src="pat_lib_images/Resource Page Example.jpg">
+</div>
+
+<section id="item-5">
+<h2>Contact & Directory Pages:</h2>
+<p>Contact and Directory pages reside on sub-primary navigation levels within a Business or Service.</p>
+
+<p>They include accordions with bios on a particular Business or Service's team members, along with relevant contact info so that a member can get in contact with them. </p>
+
+<p>They often will include a CTA to lead the member to a contact form.</p>
+
+&nbsp;
+
+<p>Below is an example of how a Contact & Directory page might be laid out and how the components could be used:</p>
+</section>
+
+<div class="img_container top-bottom-padding">
+<img src="pat_lib_images/Contact_&_Directory_Page.jpg">
+</div>
+
+<div class="EndCapContainer">
+<div class="EndCap">
+<h2>Feeback Form</h2>
+<p>Have some feedback for how the Pattern Library could be improved?</p>
+<p>&nbsp;</p>
+<button class="email"><a href="https://forms.gle/2dsohaHgxoPUa3yx7" target="_blank">Go to feedback form</a></button>
+</div>
+</div>
+
+<div class="FinePrint">
+<center><p>Website design and content &copy; John Muehl for SSFCU - 2022</p></center>
+</div>  
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
+
+<!--////////////////////////////////SCRIPTS//////////////////////////////////////-->
